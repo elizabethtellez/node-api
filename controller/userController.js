@@ -1,6 +1,6 @@
 const constants = require('../constants');
 const userService = require('../service/userService');
-const passwordUtil = require('../util/passwordComplexityCheck');
+const passwordUtil = require('../middleware/passwordComplexityCheck');
 
 module.exports.signup = async (req, res) => {
   let response = { ...constants.defaultServerResponse };
