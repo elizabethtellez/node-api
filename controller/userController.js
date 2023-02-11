@@ -5,13 +5,13 @@ const passwordUtil = require('../util/passwordComplexityCheck');
 module.exports.signup = async (req, res) => {
   let response = { ...constants.defaultServerResponse };
   try {
-    const responseFromService = await userService.signup(req.body);
     const password = req.body.password;
     const passwordCheck = passwordUtil.passwordPass(password);
     if (passwordCheck.error) {
       res.status(400).send({ message: passwordCheck.error });
       return;
     }
+    const responseFromService = await userService.signup(req.body);
     response.status = 200;
     response.message = constants.userMessage.SIGNUP_SUCCESS;
     response.body = responseFromService;
