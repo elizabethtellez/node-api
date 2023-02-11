@@ -7,7 +7,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTJlY2JiM
 
 
 ### GET product by id
-GET /api/v1/product/63e2fe3de4b7e452d29119d5 HTTP/1.1
+GET /api/v1/product/63e331f6ffcc7a4bf33c94e3 HTTP/1.1
 Host: localhost:8000
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTJlY2JiMDU1MTQ5ODFhMmE1Y2NmZiIsImlhdCI6MTY3NTgxOTIzMywiZXhwIjoxNjc1OTA1NjMzfQ.poxQARyNaOGlGwqGEoJlnqGF7s7w5RY2HGS1bMrpY4Y
 
@@ -19,7 +19,7 @@ Content-Type: application/json
 Content-Length: 159
 
 {
-    "name": "Casual Jeans",
+    "name": "Casual blouse",
     "brand": "Levi's",
     "price": 250,
     "quantity": 2,
@@ -40,7 +40,7 @@ Content-Length: 73
 }
 
 ### UPDATE product
-PUT /api/v1/product/63e30b63c300661ff8656341 HTTP/1.1
+PUT /api/v1/product/63e33324ffcc7a4bf33c94e8 HTTP/1.1
 Host: localhost:8000
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTJlY2JiMDU1MTQ5ODFhMmE1Y2NmZiIsImlhdCI6MTY3NTgxOTIzMywiZXhwIjoxNjc1OTA1NjMzfQ.poxQARyNaOGlGwqGEoJlnqGF7s7w5RY2HGS1bMrpY4Y
 Content-Type: application/json
@@ -51,7 +51,7 @@ Content-Length: 22
 }
 
 ### DELETE product
-DELETE /api/v1/product/63e30b63c300661ff8656341 HTTP/1.1
+DELETE /api/v1/product/63e33324ffcc7a4bf33c94e8 HTTP/1.1
 Host: localhost:8000
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTJlY2JiMDU1MTQ5ODFhMmE1Y2NmZiIsImlhdCI6MTY3NTgxOTIzMywiZXhwIjoxNjc1OTA1NjMzfQ.poxQARyNaOGlGwqGEoJlnqGF7s7w5RY2HGS1bMrpY4Y
 
@@ -73,7 +73,7 @@ GET https://node-api-0o67.onrender.com/api/v1/product
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTJlY2JiMDU1MTQ5ODFhMmE1Y2NmZiIsImlhdCI6MTY3NTgxOTIzMywiZXhwIjoxNjc1OTA1NjMzfQ.poxQARyNaOGlGwqGEoJlnqGF7s7w5RY2HGS1bMrpY4Y
 
 ### GET product by id
-GET https://node-api-0o67.onrender.com/api/v1/product/63e2fe3de4b7e452d29119d5
+GET https://node-api-0o67.onrender.com/api/v1/product/63e331f6ffcc7a4bf33c94e3 
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTJlY2JiMDU1MTQ5ODFhMmE1Y2NmZiIsImlhdCI6MTY3NTgxOTIzMywiZXhwIjoxNjc1OTA1NjMzfQ.poxQARyNaOGlGwqGEoJlnqGF7s7w5RY2HGS1bMrpY4Y
 
 ### CREATE new product
@@ -85,8 +85,8 @@ Content-Length: 159
 {
     "name": "Formal Jeans",
     "brand": "Levi's",
-    "price": 250,
-    "quantity": 2,
+    "price": 300,
+    "quantity": 5,
     "fabric": "jeans",
     "color": "blue",
     "stored": 7
@@ -105,14 +105,14 @@ Content-Length: 73
 POST https://node-api-0o67.onrender.com/api/v1/user/signup HTTP/1.1
 Content-Type: application/json
 Content-Length: 73
-
+ 
 {
     "email": "elizabetht@gmail.com",
     "password": "123456"
 }
 
 ### UPDATE product
- PUT https://node-api-0o67.onrender.com/api/v1/product/63e2fe3de4b7e452d29119d5 HTTP/1.1
+ PUT https://node-api-0o67.onrender.com/api/v1/product/63e333e738f4ba98a1c22b01 HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTJlY2JiMDU1MTQ5ODFhMmE1Y2NmZiIsImlhdCI6MTY3NTgxOTIzMywiZXhwIjoxNjc1OTA1NjMzfQ.poxQARyNaOGlGwqGEoJlnqGF7s7w5RY2HGS1bMrpY4Y
 Content-Type: application/json
 Content-Length: 22
@@ -121,5 +121,5 @@ Content-Length: 22
     "price": 100
 }
 ### DELETE product
-DELETE https://node-api-0o67.onrender.com/api/v1/product/63e30b48c300661ff865633f HTTP/1.1
+DELETE https://node-api-0o67.onrender.com/api/v1/product/63e333e738f4ba98a1c22b01 HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTJlY2JiMDU1MTQ5ODFhMmE1Y2NmZiIsImlhdCI6MTY3NTgxOTIzMywiZXhwIjoxNjc1OTA1NjMzfQ.poxQARyNaOGlGwqGEoJlnqGF7s7w5RY2HGS1bMrpY4Y
