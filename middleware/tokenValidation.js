@@ -2,7 +2,6 @@ const constants = require('../constants');
 const jwt = require('jsonwebtoken');
 
 module.exports.validateToken = (req, res, next) => {
-  
   let response = { ...constants.defaultServerResponse };
 
   try {
