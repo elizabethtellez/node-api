@@ -3,7 +3,7 @@
 ### GET all products
 GET /api/v1/product?=null HTTP/1.1
 Host: localhost:8000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTJlY2JiMDU1MTQ5ODFhMmE1Y2NmZiIsImlhdCI6MTY3NTgxOTIzMywiZXhwIjoxNjc1OTA1NjMzfQ.poxQARyNaOGlGwqGEoJlnqGF7s7w5RY2HGS1bMrpY4Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTgxNWMzMjU5NzIyNWM4NTRiMjVhMyIsImlhdCI6MTY3NjE1NjkwNCwiZXhwIjoxNjc2MjQzMzA0fQ.9Tu6jKZ_66ELp8ghJHiMZDtYui7VAiYPJ1JSIcQhBqY
 
 
 ### GET product by id
@@ -40,9 +40,9 @@ Content-Length: 73
 }
 
 ### UPDATE product
-PUT /api/v1/product/63e33324ffcc7a4bf33c94e8 HTTP/1.1
+PUT /api/v1/product/63e823a6756c2f8760fe7c72 HTTP/1.1
 Host: localhost:8000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTJlY2JiMDU1MTQ5ODFhMmE1Y2NmZiIsImlhdCI6MTY3NTgxOTIzMywiZXhwIjoxNjc1OTA1NjMzfQ.poxQARyNaOGlGwqGEoJlnqGF7s7w5RY2HGS1bMrpY4Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTgxNWMzMjU5NzIyNWM4NTRiMjVhMyIsImlhdCI6MTY3NjE1NjkwNCwiZXhwIjoxNjc2MjQzMzA0fQ.9Tu6jKZ_66ELp8ghJHiMZDtYui7VAiYPJ1JSIcQhBqY
 Content-Type: application/json
 Content-Length: 22
 
@@ -51,9 +51,9 @@ Content-Length: 22
 }
 
 ### DELETE product
-DELETE /api/v1/product/63e33324ffcc7a4bf33c94e8 HTTP/1.1
+DELETE /api/v1/product/63e823a6756c2f8760fe7c72 HTTP/1.1
 Host: localhost:8000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTJlY2JiMDU1MTQ5ODFhMmE1Y2NmZiIsImlhdCI6MTY3NTgxOTIzMywiZXhwIjoxNjc1OTA1NjMzfQ.poxQARyNaOGlGwqGEoJlnqGF7s7w5RY2HGS1bMrpY4Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTgxNWMzMjU5NzIyNWM4NTRiMjVhMyIsImlhdCI6MTY3NjE1NjkwNCwiZXhwIjoxNjc2MjQzMzA0fQ.9Tu6jKZ_66ELp8ghJHiMZDtYui7VAiYPJ1JSIcQhBqY
 
 
 ### LOGIN
