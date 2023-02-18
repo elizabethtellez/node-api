@@ -3,7 +3,6 @@ const jwt = require('jsonwebtoken');
 
 module.exports.validateToken = (req, res, next) => {
   let response = { ...constants.defaultServerResponse };
-
   try {
     if (!req.headers.authorization) {
       throw new Error(constants.requestValidationMessage.TOKEN_MISSING);
