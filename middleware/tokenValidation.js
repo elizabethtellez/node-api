@@ -11,7 +11,8 @@ module.exports.validateToken = (req, res, next) => {
     const decoded = jwt.verify(token, process.env.SECRET_KEY || 'my-secret-key');
     console.log('decoded', decoded);
     return next();
-  } catch (error) {
+  } 
+  catch (error) {
     console.log('Error', error);
     response.message = error.message;
     response.status = 401;
